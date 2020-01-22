@@ -46,9 +46,7 @@ def titleize(string)
 	string_result.each do |x|
 		if long > 1
 			string_rouge += x.capitalize + " "
-		end
-
-		if long == 1
+		else
 			string_rouge += x.capitalize
 		end
 		long -= 1
